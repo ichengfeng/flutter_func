@@ -9,6 +9,8 @@ import 'func/player/chewie_player.dart';
 import 'func/player/player.dart';
 import 'package:itools/screen_size.dart';
 
+import 'func/waterfall_layout/waterfall.dart';
+
 main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -45,6 +47,7 @@ class MyMainPage extends StatelessWidget {
     PageItemModel(3, '播放器'),
     PageItemModel(4, 'Chewie播放器'),
     PageItemModel(5, 'XX_Login'),
+    PageItemModel(6, '瀑布流'),
   ];
 
   @override
@@ -156,6 +159,13 @@ class MyMainPageItem extends StatelessWidget {
         {
           Navigator.push(context, MaterialPageRoute(builder: (ctx) {
             return const LoginBgWithVideoPage();
+          }));
+          break;
+        }
+      case 6:
+        {
+          Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+            return const WaterfallPage();
           }));
           break;
         }

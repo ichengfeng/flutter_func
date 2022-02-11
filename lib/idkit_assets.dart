@@ -1,4 +1,4 @@
-class     Assets     {
+class      Assets      {
   /// assets
  
   /// assets/3x
