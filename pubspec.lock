@@ -104,6 +104,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.6.1"
+  flutter_swiper_plus:
+    dependency: "direct main"
+    description:
+      name: flutter_swiper_plus
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.4"
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -128,6 +135,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.0.0"
+  idkit_tableview:
+    dependency: "direct main"
+    description:
+      name: idkit_tableview
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.1"
   itools:
     dependency: "direct main"
     description:

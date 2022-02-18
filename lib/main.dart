@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_func/func/banner/cycle_banner.dart';
+import 'package:flutter_func/func/category_picker/category_picker.dart';
 import 'package:flutter_func/func/login/other_style/login_bg_video.dart';
+import 'package:flutter_func/func/maituan/meituan.dart';
+import 'package:flutter_func/func/nested_scroller/nested_scroll.dart';
 import 'package:flutter_func/router/router.dart';
 import 'package:flutter_func/widgets/colors/material_colors.dart';
 import 'func/login/login.dart';
@@ -9,6 +13,7 @@ import 'func/player/chewie_player.dart';
 import 'func/player/player.dart';
 import 'package:itools/screen_size.dart';
 
+import 'func/tableview/tableview.dart';
 import 'func/waterfall_layout/waterfall.dart';
 
 main() => runApp(const MyApp());
@@ -48,6 +53,11 @@ class MyMainPage extends StatelessWidget {
     PageItemModel(4, 'Chewie播放器'),
     PageItemModel(5, 'XX_Login'),
     PageItemModel(6, '瀑布流'),
+    PageItemModel(7, 'Category'),
+    PageItemModel(8, '轮播图'),
+    PageItemModel(9, 'NestScroll'),
+    PageItemModel(10, '美团商铺页面'),
+    PageItemModel(11, 'TableView'),
   ];
 
   @override
@@ -166,6 +176,41 @@ class MyMainPageItem extends StatelessWidget {
         {
           Navigator.push(context, MaterialPageRoute(builder: (ctx) {
             return const WaterfallPage();
+          }));
+          break;
+        }
+      case 7:
+        {
+          Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+            return const CategoryPickerPage();
+          }));
+          break;
+        }
+      case 8:
+        {
+          Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+            return const CycleBannerPage();
+          }));
+          break;
+        }
+      case 9:
+        {
+          Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+            return const NestedScrollPage();
+          }));
+          break;
+        }
+      case 10:
+        {
+          Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+            return const MTPlaceOrderPage();
+          }));
+          break;
+        }
+      case 11:
+        {
+          Navigator.push(context, MaterialPageRoute(builder: (ctx){
+            return const MultipleTablePage();
           }));
           break;
         }

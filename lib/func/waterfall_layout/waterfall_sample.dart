@@ -209,7 +209,6 @@ class AlignedView extends StatelessWidget {
   }
 }
 
-
 class Tile extends StatelessWidget {
   const Tile({Key? key, required this.index,this.height = 50}) : super(key: key);
 
