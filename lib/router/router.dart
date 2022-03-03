@@ -4,6 +4,7 @@ import 'package:flutter_func/func/large_picture/large_pictures_show.dart';
 import 'package:flutter_func/func/login/other_style/login_bg_video.dart';
 import 'package:flutter_func/func/player/chewie_player.dart';
 import 'package:flutter_func/func/player/player.dart';
+import 'package:flutter_func/func/tableview/easy_tableview.dart';
 import 'package:flutter_func/router/unknown.dart';
 import 'package:flutter_func/func/login/login.dart';
 import '../main.dart';
@@ -14,6 +15,7 @@ class CFRouter {
     LoginPage.routeName: (ctx) => const LoginPage(),
     LoginBgWithVideoPage.routeName: (ctx) => const LoginBgWithVideoPage(),
     LargePictureDisplayPage.routeName: (ctx) => const LargePictureDisplayPage(),
+    EasyTableView.routeName: (ctx) => const EasyTableView(),
     // PlayerPage.routeName: (ctx) => const PlayerPage(),
     // ChewiePlayerPage.routeName: (ctx) => const ChewiePlayerPage(),
     // LargePicturesShowPage.routeName: (ctx) => const LargePicturesShowPage(),
