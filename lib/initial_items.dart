@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_func/func/login/login_test.dart';
 import 'package:flutter_func/func/photo/photo_show_test.dart';
 import 'package:flutter_func/func/player/player_test.dart';

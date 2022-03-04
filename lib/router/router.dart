@@ -22,6 +22,7 @@ import '../main.dart';
 
 class CFRouter {
   static final Map<String, WidgetBuilder>routers = {
+    ///首页用到的路由
     MyMainPage.routeName: (ctx) => const MyMainPage(),
     LoginTestList.routeName: (ctx) => LoginTestList(),
     PhotoShowTest.routeName: (ctx) => PhotoShowTest(),
@@ -32,6 +33,7 @@ class CFRouter {
     ScrollViewTest.routeName: (ctx) => ScrollViewTest(),
     TabBarTestPage.routeName: (ctx) => const TabBarTestPage(),
 
+    ///其他页面
     LoginPage.routeName: (ctx) => const LoginPage(),
     LoginBgWithVideoPage.routeName: (ctx) => const LoginBgWithVideoPage(),
     LargePictureDisplayPage.routeName: (ctx) => const LargePictureDisplayPage(),
@@ -67,5 +69,4 @@ class CFRouter {
       });
     };
   }
-
 }
