@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		bzfy6M/B1TtIQ8bJp62K1MpTbVs=
+		QdXquUU7domq7ZhWY6jzB8OLUpY=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>flutter_assets/NOTICES.Z</key>
 		<data>
-		MKOYNB6QjJPy6pk1GvQbKvOLulY=
+		dRh10902P3r0zFGwmqnlZP6Cadg=
 		</data>
 		<key>flutter_assets/assets/3x/common/ic_delete.png</key>
 		<data>
@@ -50,11 +50,19 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		lAUj2mfUlRbdE+GgRIK7q5cFyCE=
+		FlaSWJ620hDS1+Yu6bF/+OMIqQQ=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
 		P7bb/oR3EhwqCIH1M6LyTuBIWYU=
+		</data>
+		<key>flutter_assets/packages/fluttertoast/assets/toastify.css</key>
+		<data>
+		HVkEhoid+n6bwOYCwZg4DdmGBHY=
+		</data>
+		<key>flutter_assets/packages/fluttertoast/assets/toastify.js</key>
+		<data>
+		Q0Yr9JVfSBiRH22TkE46LT+KLE8=
 		</data>
 		<key>flutter_assets/packages/wakelock_web/assets/no_sleep.js</key>
 		<data>
@@ -71,11 +79,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bzfy6M/B1TtIQ8bJp62K1MpTbVs=
+			QdXquUU7domq7ZhWY6jzB8OLUpY=
 			</data>
 			<key>hash2</key>
 			<data>
-			IQIsZ4G+/xO+zOMph48QNsfMBBzHRtV50bEmEYLPk9Y=
+			KvHYbPhLt944AxSV5YYXXTGcOzomWNWLvie6XmA+KXw=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -93,11 +101,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MKOYNB6QjJPy6pk1GvQbKvOLulY=
+			dRh10902P3r0zFGwmqnlZP6Cadg=
 			</data>
 			<key>hash2</key>
 			<data>
-			VP+Le5GRBOJXCiKDyp6x2evzTbMLganO8CJ5uosDUyM=
+			MdzoOfuKwYJJNvRuPtk/VwUzkvosAWLnK4e3uxQwYV4=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/3x/common/ic_delete.png</key>
@@ -181,11 +189,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lAUj2mfUlRbdE+GgRIK7q5cFyCE=
+			FlaSWJ620hDS1+Yu6bF/+OMIqQQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			VZt4L4O0MVeAorDUaLrJUPcASPdERMHxO8p4HhWL0GY=
+			/WFTdOsr7zGSKRpoDgqJUTM6aJt39WuvNagAO7kifsc=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -197,6 +205,28 @@
 			<key>hash2</key>
 			<data>
 			x6NX+tjyECiQtyzbbjyY8U2zoZ7GDbJtE+T+k/dzgI0=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/fluttertoast/assets/toastify.css</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HVkEhoid+n6bwOYCwZg4DdmGBHY=
+			</data>
+			<key>hash2</key>
+			<data>
+			abr0T+pbPv0zd7q8FU7xuDv4JjuRAgKox9bnRddRNJ8=
+			</data>
+		</dict>
+		<key>flutter_assets/packages/fluttertoast/assets/toastify.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Q0Yr9JVfSBiRH22TkE46LT+KLE8=
+			</data>
+			<key>hash2</key>
+			<data>
+			mfqR+tbc9El/g4k3uPxXEF7vEx1a29TL45Ns5tQkjsE=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/wakelock_web/assets/no_sleep.js</key>

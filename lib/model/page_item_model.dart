@@ -1,6 +1,6 @@
 class PageItemModel {
-  final int index;
+  final String routeName;
   final String title;
 
-  PageItemModel(this.index, this.title);
+  PageItemModel(this.routeName, this.title);
 }

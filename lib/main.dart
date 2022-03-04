@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_func/model/page_item_model.dart';
 import 'package:flutter_func/router/router.dart';
 import 'package:flutter_func/widgets/colors/material_colors.dart';
 import 'package:itools/screen_size.dart';
 import 'initial_items.dart';
-import 'model/page_item_model.dart';
 import 'package:bot_toast/bot_toast.dart';
 
 main() => runApp(const MyApp());
@@ -53,6 +53,7 @@ class MyMainPage extends StatelessWidget {
         itemBuilder: (ctx, index) {
           return MyMainPageItem(
             model: itemList[index],
+            index: index,
           );
         },
       ),
@@ -62,10 +63,12 @@ class MyMainPage extends StatelessWidget {
 
 class MyMainPageItem extends StatelessWidget {
   final PageItemModel model;
+  final int index;
 
   const MyMainPageItem({
     Key? key,
     required this.model,
+    required this.index,
   }) : super(key: key);
 
   @override
@@ -80,7 +83,7 @@ class MyMainPageItem extends StatelessWidget {
             child: Text(model.title),
           ),
         ),
-        onTap: () => jumpToTargetPage(context, model),
+        onTap: () => Navigator.of(context).pushNamed(model.routeName),
       ),
     );
   }
