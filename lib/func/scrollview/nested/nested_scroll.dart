@@ -34,8 +34,8 @@ class ScrollContent extends StatelessWidget {
                 flexibleSpace: FlexibleSpaceBar(
                   // title: const Text('复仇者联盟'),
                   background: Image.network(
-                    'http://img.haote.com/upload/20180918/2018091815372344164.jpg',
-                    fit: BoxFit.fitHeight,
+                    'https://ichengfeng.github.io/resource/app/xinxi/banner/01.jpg',
+                    fit: BoxFit.cover,
                   ),
                 ),
                 bottom: TabBar(
