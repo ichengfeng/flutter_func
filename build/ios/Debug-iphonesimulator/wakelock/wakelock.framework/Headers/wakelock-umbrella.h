@@ -10,8 +10,8 @@
 #endif
 #endif
 
-#import "IdleTimerDisabledObserver.h"
 #import "messages.h"
+#import "UIApplication+idleTimerLock.h"
 #import "WakelockPlugin.h"
 
 FOUNDATION_EXPORT double wakelockVersionNumber;

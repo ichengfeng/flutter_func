@@ -8,6 +8,10 @@
 		<data>
 		yvjc6hAUedouoDDBSlYZS0GyIg0=
 		</data>
+		<key>Headers/UIApplication+idleTimerLock.h</key>
+		<data>
+		YTUSYlLEcqVFMEzw+Cl8lwIunOc=
+		</data>
 		<key>Headers/WakelockPlugin.h</key>
 		<data>
 		jx6ieqrFBcLtWWShlaaCxIUXuiU=
@@ -18,11 +22,11 @@
 		</data>
 		<key>Headers/wakelock-umbrella.h</key>
 		<data>
-		jV0RSj30eGD+LpHHknMYbv3YHWU=
+		CD9gkr4ybmR5n8FkdYB62hHfZb0=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		DOohQUHj+n+mjpFhXgB79Tqc8Ic=
+		w31Q6LsiUnH9QeX5Z05/Hr4JShg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -40,6 +44,17 @@
 			<key>hash2</key>
 			<data>
 			t2i1nDbcHTNr4AS+8u4nFEtcEHeJEPag2uabs9c4Eqc=
+			</data>
+		</dict>
+		<key>Headers/UIApplication+idleTimerLock.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			YTUSYlLEcqVFMEzw+Cl8lwIunOc=
+			</data>
+			<key>hash2</key>
+			<data>
+			excvSMeR9Ejdxe4/LLVxuOFlTXAH87SpM2IaQcGLCX0=
 			</data>
 		</dict>
 		<key>Headers/WakelockPlugin.h</key>
@@ -68,11 +83,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jV0RSj30eGD+LpHHknMYbv3YHWU=
+			CD9gkr4ybmR5n8FkdYB62hHfZb0=
 			</data>
 			<key>hash2</key>
 			<data>
-			BuFgL9BpO4kQbtLGPUXcvTds3hNdD8gyzNviiEZgaXI=
+			8XZ++mCShXOyu+bavxggdGasHphcDimNsTeLfAovveU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
