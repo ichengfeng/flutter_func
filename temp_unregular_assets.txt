@@ -1,4 +1,0 @@
-
-REASON: Resource file naming is not standard.
-  NAME: 02.jpg
-  PATH: assets/3x/common/02.jpg

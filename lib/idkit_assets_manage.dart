@@ -1,4 +1,4 @@
-class IDKitAssets {
+class Assets {
 	/// assets/
 
 	/// assets/3x/

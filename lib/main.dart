@@ -45,19 +45,63 @@ class MyMainPage extends StatelessWidget {
         backgroundColor: Colors.white,
         centerTitle: true,
         title: const Text(
-          '工作台',
+          'Flutter Work Space',
           style: TextStyle(color: Colors.black),
         ),
       ),
-      body: ListView.builder(
-        itemCount: itemList.length,
-        itemBuilder: (ctx, index) {
-          return MyMainPageItem(
-            model: itemList[index],
-            index: index,
-          );
-        },
+      body: ListView(
+        padding: EdgeInsets.only(top: 16.px),
+        children: [
+          buildHeadView('Example For UI'),
+          MyGridView(dataList: itemList,),
+          buildHeadView('Example For Widget'),
+          MyGridView(dataList: widgetList),
+          buildHeadView('Example For Other Func'),
+          MyGridView(dataList: functionList),
+        ],
       ),
+    );
+  }
+
+  Widget buildHeadView(String title){
+    return Container(
+      padding: EdgeInsets.only(left: 16.px,right: 16.px,),
+      child: Text(
+        title,
+        style: TextStyle(
+          fontSize: 18.px,
+          fontWeight: FontWeight.w600,
+          color: Colors.black,
+        ),
+      ),
+    );
+  }
+}
+
+class MyGridView extends StatelessWidget {
+  const MyGridView({
+    Key? key,
+    required this.dataList,
+  }) : super(key: key);
+
+  final List<PageItemModel> dataList;
+
+  @override
+  Widget build(BuildContext context) {
+    return GridView.builder(
+      padding: EdgeInsets.all(12.px),
+      itemCount: dataList.length,
+      shrinkWrap: true,
+      physics: const NeverScrollableScrollPhysics(),
+      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 3,
+          crossAxisSpacing: 12.px,
+          mainAxisSpacing: 12.px,
+          mainAxisExtent: 44.px
+      ),
+      itemBuilder: (ctx, index){
+        return MyMainPageItem(model: dataList[index], index: index);
+      },
     );
   }
 }
@@ -74,18 +118,15 @@ class MyMainPageItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: EdgeInsets.only(left: 16.rpx, right: 16.rpx, top: 16.rpx),
-      child: GestureDetector(
-        child: Container(
-          height: 98.rpx,
-          color: Colors.white.withOpacity(0.6),
-          child: Center(
-            child: Text(model.title,style: TextStyle(color: colorWithHexString('333333')),),
-          ),
-        ),
-        onTap: () => Navigator.of(context).pushNamed(model.routeName),
+    return GestureDetector(
+      child: Container(
+        color: Colors.white.withOpacity(0.6),
+        // padding: EdgeInsets.all(16.px),
+        // margin: EdgeInsets.only(left: 12.px,right: 12.px,top: 12.px),
+        alignment: Alignment.center,
+        child: Text(model.title,style: TextStyle(color: colorWithHexString('333333')),),
       ),
+      onTap: () => Navigator.of(context).pushNamed(model.routeName),
     );
   }
 }

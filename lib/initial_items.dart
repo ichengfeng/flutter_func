@@ -1,17 +1,28 @@
-import 'package:flutter_func/func/Text/text_test.dart';
-import 'package:flutter_func/func/login/login_test.dart';
-import 'package:flutter_func/func/photo/photo_show_test.dart';
-import 'package:flutter_func/func/player/player_test.dart';
-import 'package:flutter_func/func/webview/webview_test.dart';
-import 'func/imageview/imageview_test.dart';
-import 'func/table/table_test.dart';
-import 'func/waterfall/waterfall.dart';
-import 'func/cupertino/cupertino_test.dart';
-import 'package:flutter_func/func/tableview/tableview_test.dart';
-import 'package:flutter_func/func/scrollview/scroll_test.dart';
-import 'func/tabbar/tabbar.dart';
-import 'func/provider/provider_test.dart';
-import 'package:flutter_func/func/layout/layout_test.dart';
+/*
+* UI
+* */
+import 'package:flutter_func/func/example_ui/cupertino/cupertino_test.dart';
+import 'package:flutter_func/func/example_ui/login/login_test.dart';
+import 'package:flutter_func/func/example_ui/photo/photo_show_test.dart';
+import 'package:flutter_func/func/example_ui/player/player_test.dart';
+import 'package:flutter_func/func/example_ui/tableview/tableview_test.dart';
+import 'package:flutter_func/func/example_ui/waterfall/waterfall.dart';
+
+/*
+* Widget
+* */
+import 'package:flutter_func/func/example_widget/Text/text_test.dart';
+import 'package:flutter_func/func/example_widget/imageview/imageview_test.dart';
+import 'package:flutter_func/func/example_widget/layout/layout_test.dart';
+import 'package:flutter_func/func/example_widget/scrollview/scroll_test.dart';
+import 'package:flutter_func/func/example_widget/tabbar/tabbar.dart';
+import 'package:flutter_func/func/example_widget/table/table_test.dart';
+import 'package:flutter_func/func/example_widget/webview/webview_test.dart';
+
+/*
+* Other Func
+* */
+import 'package:flutter_func/func/example_other_func/provider/provider_test.dart';
 
 import 'model/page_item_model.dart';
 
@@ -22,12 +33,18 @@ List<PageItemModel> itemList = [
   PageItemModel(WaterfallPage.routeName, '瀑布流'),
   PageItemModel(CupertinoWidgetTest.routeName, 'Cupertino'),
   PageItemModel(TableViewTest.routeName, 'TableView'),
-  PageItemModel(ScrollViewTest.routeName, 'ScrollView'),
-  PageItemModel(WebViewTestPage.routerName, "WebView"),
-  PageItemModel(TabBarTestPage.routeName, 'TabBar'),
-  PageItemModel(ProviderTestPage.routeName, 'Provider'),
+];
+
+List<PageItemModel> widgetList = [
   PageItemModel(LayoutTestPage.routerName, 'Layout'),
   PageItemModel(TextTest.routeName, 'Text Test'),
-  PageItemModel(TableTest.routeName, 'Table Test'),
   PageItemModel(ImageViewTest.routeName, "ImageView"),
+  PageItemModel(TabBarTestPage.routeName, 'TabBar'),
+  PageItemModel(ScrollViewTest.routeName, 'ScrollView'),
+  PageItemModel(WebViewTestPage.routerName, "WebView"),
+  PageItemModel(TableTest.routeName, 'Table Test'),
+];
+
+List<PageItemModel> functionList = [
+  PageItemModel(ProviderTestPage.routeName, 'Provider'),
 ];
