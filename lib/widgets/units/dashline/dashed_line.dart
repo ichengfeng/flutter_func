@@ -10,14 +10,14 @@ class DashedLine extends StatelessWidget {
     return Center(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          Container(
+        children: const <Widget>[
+          SizedBox(
             width: 200,
-            child: const CFDashedLine(dashedWidth: 8, count: 15,color: Colors.green,),
+            child: CFDashedLine(dashedWidth: 8, count: 15,color: Colors.green,),
           ),
-          Container(
+          SizedBox(
             height: 200,
-            child: const CFDashedLine(axis: Axis.vertical, dashedHeight: 6, count: 15,),
+            child: CFDashedLine(axis: Axis.vertical, dashedHeight: 6, count: 15,),
           )
         ],
       ),

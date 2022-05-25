@@ -30,25 +30,18 @@ class WaterfallSamplePage extends StatelessWidget {
     switch (type ?? WaterfallType.masonry) {
       case WaterfallType.staggered: {
         return const StaggeredGridView();
-        break;
       }
       case WaterfallType.masonry:
         return const MasonryGrid();
-        break;
       case WaterfallType.quilted:
         return const QuiltedView();
-        break;
       case WaterfallType.woven:
         return const WovenView();
-        break;
       case WaterfallType.staired:
         return const StairedView();
-        break;
       case WaterfallType.aligned:
         return const AlignedView();
-        break;
     }
-    return const MasonryGrid();
   }
 }
 
@@ -186,7 +179,7 @@ class StairedView extends StatelessWidget {
       childrenDelegate: SliverChildBuilderDelegate(
             (context, index) => Tile(index: index),
       ),
-    );;
+    );
   }
 }
 

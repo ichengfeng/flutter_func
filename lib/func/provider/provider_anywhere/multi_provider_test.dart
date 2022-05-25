@@ -1,59 +1,24 @@
 import 'package:flutter/material.dart';
-import 'package:itools/log.dart';
 import 'package:provider/provider.dart';
 
-import '../model/user_info.dart';
 import '../view_model/counter_view_model.dart';
 import '../view_model/user_view_model.dart';
 
-class ProviderMultiPage extends StatefulWidget {
-  static const String routeName = "/provider_multi";
-  const ProviderMultiPage({Key? key}) : super(key: key);
-
-  @override
-  State<ProviderMultiPage> createState() => _ProviderMultiState();
-}
-
-class _ProviderMultiState extends State<ProviderMultiPage> {
+class MultiProviderTestPage extends StatelessWidget {
+  const MultiProviderTestPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    printf("Super ==== ");
-    return MultiProvider(
-      providers: [
-        ChangeNotifierProvider(create: (ctx)=>CounterViewModel(),),
-        ChangeNotifierProvider(create: (ctx)=>UserViewModel(UserInfo('cf',20,'url')),)
-      ],
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text("列表测试"),
-        ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              CFShowData01(),
-              CFShowData02(),
-              CFShowData03(),
-              CFShowData04(),
-              CFShowData05(),
-            ],
-          ),
-        ),
-        floatingActionButton: Selector<CounterViewModel, CounterViewModel>(
-
-          selector: (ctx, counterVM) => counterVM,
-          shouldRebuild: (prev, next) => false,
-
-          builder:(ctx, countVM, child){
-            return FloatingActionButton(
-              child: child,
-              onPressed: (){
-                countVM.counter += 1;
-              },
-            );
-          },
-          child: const Icon(Icons.add),
+    ///3、在其他位置使用共享数据
+    // int counter = Provider.of<CounterViewModel>(context).counter;
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Test"),
+      ),
+      body: Center(
+        child: Container(
+          color: Colors.red,
+          // child: const CFShowData02(),
         ),
       ),
     );
@@ -131,8 +96,8 @@ class CFShowData05 extends StatelessWidget {
     return Text(
       "${context.watch<CounterViewModel>().counter}",
       style: const TextStyle(
-        color: Colors.red,
-        fontSize: 18
+          color: Colors.red,
+          fontSize: 18
       ),
     );
   }

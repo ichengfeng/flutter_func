@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_func/func/Text/text_test.dart';
+import 'package:flutter_func/func/imageview/imageview_test.dart';
 import 'package:flutter_func/func/layout/layout_test.dart';
 import 'package:flutter_func/func/photo/single_show/large_picture_display.dart';
 import 'package:flutter_func/func/photo/list_show/large_pictures_show.dart';
@@ -22,6 +24,7 @@ import '../func/provider/provider_test.dart';
 import '../func/scrollview/maituan/meituan.dart';
 import '../func/scrollview/nested/nested_scroll.dart';
 import '../func/scrollview/scroll_test.dart';
+import '../func/table/table_test.dart';
 import '../func/tableview/handy_tableview/handy_tableview_test.dart';
 import '../main.dart';
 
@@ -40,6 +43,9 @@ class CFRouter {
     TabBarTestPage.routeName: (ctx) => const TabBarTestPage(),
     ProviderTestPage.routeName: (ctx) => ProviderTestPage(),
     LayoutTestPage.routerName: (ctx) => const LayoutTestPage(),
+    TextTest.routeName: (ctx) => const TextTest(),
+    TableTest.routeName: (ctx) => const TableTest(),
+    ImageViewTest.routeName: (ctx) => const ImageViewTest(),
 
     ///其他页面
     LoginPage.routeName: (ctx) => const LoginPage(),

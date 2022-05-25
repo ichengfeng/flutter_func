@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_func/func/provider/provider_anywhere/provider_anwhere.dart';
 import 'package:flutter_func/func/provider/provider_multi/provider_multi.dart';
 import 'package:flutter_func/func/provider/provider_single/provider_single.dart';
 import '../../widgets/base/base_list.dart';
@@ -12,6 +13,7 @@ class ProviderTestPage extends BaseListPage {
   final List<String> items = [
     "Single",
     "Multi",
+    "Anywhere"
   ];
 
   @override
@@ -33,6 +35,12 @@ class ProviderTestPage extends BaseListPage {
       }
       case 1: {
         Navigator.of(context).pushNamed(ProviderMultiPage.routeName);
+        break;
+      }
+      case 2: {
+        Navigator.of(context).push(MaterialPageRoute(builder: (ctx){
+          return const ProviderAnywherePage();
+        }));
         break;
       }
       default:{

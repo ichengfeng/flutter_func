@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_func/model/page_item_model.dart';
 import 'package:flutter_func/router/router.dart';
 import 'package:flutter_func/widgets/colors/material_colors.dart';
+import 'package:flutter_func/widgets/units/color/color_extension.dart';
 import 'package:itools/screen_size.dart';
 import 'initial_items.dart';
 import 'package:bot_toast/bot_toast.dart';
@@ -80,7 +81,7 @@ class MyMainPageItem extends StatelessWidget {
           height: 98.rpx,
           color: Colors.white.withOpacity(0.6),
           child: Center(
-            child: Text(model.title),
+            child: Text(model.title,style: TextStyle(color: colorWithHexString('333333')),),
           ),
         ),
         onTap: () => Navigator.of(context).pushNamed(model.routeName),

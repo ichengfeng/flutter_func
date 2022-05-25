@@ -61,7 +61,7 @@ class _LoginInputAreaPageState extends State<LoginInputAreaPage> {
             timerManger.start();
           });
         },
-        child: CountDownWidgetWrapper(builder: (count){
+        child: CountDownWrapper(builder: (count){
           if (count == 0) {
             sendMessage = false;
           }

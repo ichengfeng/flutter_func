@@ -1,7 +1,10 @@
+import 'package:flutter_func/func/Text/text_test.dart';
 import 'package:flutter_func/func/login/login_test.dart';
 import 'package:flutter_func/func/photo/photo_show_test.dart';
 import 'package:flutter_func/func/player/player_test.dart';
 import 'package:flutter_func/func/webview/webview_test.dart';
+import 'func/imageview/imageview_test.dart';
+import 'func/table/table_test.dart';
 import 'func/waterfall/waterfall.dart';
 import 'func/cupertino/cupertino_test.dart';
 import 'package:flutter_func/func/tableview/tableview_test.dart';
@@ -23,5 +26,8 @@ List<PageItemModel> itemList = [
   PageItemModel(WebViewTestPage.routerName, "WebView"),
   PageItemModel(TabBarTestPage.routeName, 'TabBar'),
   PageItemModel(ProviderTestPage.routeName, 'Provider'),
-  PageItemModel(LayoutTestPage.routerName, 'Layout')
+  PageItemModel(LayoutTestPage.routerName, 'Layout'),
+  PageItemModel(TextTest.routeName, 'Text Test'),
+  PageItemModel(TableTest.routeName, 'Table Test'),
+  PageItemModel(ImageViewTest.routeName, "ImageView"),
 ];

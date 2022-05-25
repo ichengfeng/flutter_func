@@ -2,17 +2,17 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 ///计时器
-class CountDownWidgetWrapper extends StatefulWidget {
+class CountDownWrapper extends StatefulWidget {
   final CountDownWidgetBuilder builder;
   final CountdownController controller;
 
-  const CountDownWidgetWrapper({Key? key, required this.builder, required this.controller}) : super(key: key);
+  const CountDownWrapper({Key? key, required this.builder, required this.controller}) : super(key: key);
 
   @override
-  _CountDownWidgetWrapperState createState() => _CountDownWidgetWrapperState();
+  _CountDownWrapperState createState() => _CountDownWrapperState();
 }
 
-class _CountDownWidgetWrapperState extends State<CountDownWidgetWrapper> {
+class _CountDownWrapperState extends State<CountDownWrapper> {
   @override
   void initState() {
     super.initState();
