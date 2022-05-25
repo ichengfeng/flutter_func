@@ -7,20 +7,25 @@ class CFRouter {
   static final Map<String, WidgetBuilder>routers = {
     ///首页用到的路由
     MyMainPage.routeName: (ctx) => const MyMainPage(),
+
     LoginTestList.routeName: (ctx) => LoginTestList(),
     PhotoShowTest.routeName: (ctx) => PhotoShowTest(),
     PlayerTest.routeName: (ctx) => PlayerTest(),
     WaterfallPage.routeName: (ctx) => const WaterfallPage(),
     CupertinoWidgetTest.routeName: (ctx) => const CupertinoWidgetTest(),
     TableViewTest.routeName: (ctx) => TableViewTest(),
-    ScrollViewTest.routeName: (ctx) => ScrollViewTest(),
-    WebViewTestPage.routerName: (ctx) => const WebViewTestPage(), 
-    TabBarTestPage.routeName: (ctx) => const TabBarTestPage(),
-    ProviderTestPage.routeName: (ctx) => ProviderTestPage(),
+
     LayoutTestPage.routerName: (ctx) => const LayoutTestPage(),
     TextTest.routeName: (ctx) => const TextTest(),
-    TableTest.routeName: (ctx) => const TableTest(),
     ImageViewTest.routeName: (ctx) => const ImageViewTest(),
+    TabBarTestPage.routeName: (ctx) => const TabBarTestPage(),
+    ScrollViewTest.routeName: (ctx) => ScrollViewTest(),
+    WebViewTestPage.routerName: (ctx) => const WebViewTestPage(),
+    TableTest.routeName: (ctx) => const TableTest(),
+
+    ProviderTestPage.routeName: (ctx) => ProviderTestPage(),
+    StreamTestPage.routeName: (ctx) => const StreamTestPage(),
+    FutureTestPage.routeName: (ctx) => const FutureTestPage(),
 
     ///其他页面
     LoginPage.routeName: (ctx) => const LoginPage(),

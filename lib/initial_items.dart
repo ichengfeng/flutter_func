@@ -1,6 +1,9 @@
 /*
 * UI
 * */
+import 'package:flutter_func/func/example_other_func/future/future_builder/future_builder.dart';
+import 'package:flutter_func/func/example_other_func/future/future_test.dart';
+import 'package:flutter_func/func/example_other_func/stream/stream_test.dart';
 import 'package:flutter_func/func/example_ui/cupertino/cupertino_test.dart';
 import 'package:flutter_func/func/example_ui/login/login_test.dart';
 import 'package:flutter_func/func/example_ui/photo/photo_show_test.dart';
@@ -47,4 +50,6 @@ List<PageItemModel> widgetList = [
 
 List<PageItemModel> functionList = [
   PageItemModel(ProviderTestPage.routeName, 'Provider'),
+  PageItemModel(StreamTestPage.routeName, 'Stream'),
+  PageItemModel(FutureTestPage.routeName, "Future"),
 ];

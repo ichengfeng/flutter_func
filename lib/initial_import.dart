@@ -25,6 +25,8 @@ export 'package:flutter_func/func/example_widget/webview/webview_test.dart';
 * Other Func
 * */
 export 'package:flutter_func/func/example_other_func/provider/provider_test.dart';
+export 'package:flutter_func/func/example_other_func/stream/stream_test.dart';
+export 'package:flutter_func/func/example_other_func/future/future_test.dart';
 
 /*
 * Other Second Page
