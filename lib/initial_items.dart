@@ -1,33 +1,4 @@
-/*
-* UI
-* */
-import 'package:flutter_func/func/example_other_func/future/future_builder/future_builder.dart';
-import 'package:flutter_func/func/example_other_func/future/future_test.dart';
-import 'package:flutter_func/func/example_other_func/stream/stream_test.dart';
-import 'package:flutter_func/func/example_ui/cupertino/cupertino_test.dart';
-import 'package:flutter_func/func/example_ui/login/login_test.dart';
-import 'package:flutter_func/func/example_ui/photo/photo_show_test.dart';
-import 'package:flutter_func/func/example_ui/player/player_test.dart';
-import 'package:flutter_func/func/example_ui/tableview/tableview_test.dart';
-import 'package:flutter_func/func/example_ui/waterfall/waterfall.dart';
-
-/*
-* Widget
-* */
-import 'package:flutter_func/func/example_widget/Text/text_test.dart';
-import 'package:flutter_func/func/example_widget/imageview/imageview_test.dart';
-import 'package:flutter_func/func/example_widget/layout/layout_test.dart';
-import 'package:flutter_func/func/example_widget/scrollview/scroll_test.dart';
-import 'package:flutter_func/func/example_widget/tabbar/tabbar.dart';
-import 'package:flutter_func/func/example_widget/table/table_test.dart';
-import 'package:flutter_func/func/example_widget/webview/webview_test.dart';
-
-/*
-* Other Func
-* */
-import 'package:flutter_func/func/example_other_func/provider/provider_test.dart';
-
-import 'model/page_item_model.dart';
+import 'initial_import.dart';
 
 List<PageItemModel> itemList = [
   PageItemModel(LoginTestList.routeName, "登录style"),
@@ -46,6 +17,7 @@ List<PageItemModel> widgetList = [
   PageItemModel(ScrollViewTest.routeName, 'ScrollView'),
   PageItemModel(WebViewTestPage.routerName, "WebView"),
   PageItemModel(TableTest.routeName, 'Table Test'),
+  PageItemModel(BlendTestPage.routeName, 'BlendMode'),
 ];
 
 List<PageItemModel> functionList = [

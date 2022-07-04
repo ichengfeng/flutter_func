@@ -20,6 +20,7 @@ export 'package:flutter_func/func/example_widget/scrollview/scroll_test.dart';
 export 'package:flutter_func/func/example_widget/tabbar/tabbar.dart';
 export 'package:flutter_func/func/example_widget/table/table_test.dart';
 export 'package:flutter_func/func/example_widget/webview/webview_test.dart';
+export 'package:flutter_func/func/example_widget/blend/blend_test.dart';
 
 /*
 * Other Func

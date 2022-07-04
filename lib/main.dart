@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: MaterialColorsMaps.themeBlue,
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
+        backgroundColor: Colors.transparent,
       ),
       routes: CFRouter.routers,
       initialRoute: CFRouter.initialRoute,

@@ -1,104 +1,49 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_func/idkit_assets_manage.dart';
-import 'package:itools/screen_size.dart';
+import 'package:flutter_func/func/example_widget/tabbar/bottom_tab/bottom_tab.dart';
+import 'package:flutter_func/func/example_widget/tabbar/category/category_tabbar.dart';
+import 'package:flutter_func/widgets/base/base_list.dart';
+import 'package:flutter_func/widgets/units/toast/toast.dart';
 
-class TabBarTestPage extends StatelessWidget {
-  static const String routeName = "/tabBar_test";
 
-  const TabBarTestPage({Key? key}) : super(key: key);
+class TabBarTestPage extends BaseListPage {
+  static const String routeName = "/tabbar_test";
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Category Picker'),
-      ),
-      body: const TabBarTestContent(),
-    );
-  }
-}
+  TabBarTestPage({Key? key}) : super(key: key);
 
-class TabBarTestContent extends StatefulWidget {
-  const TabBarTestContent({Key? key}) : super(key: key);
-
-  @override
-  State<TabBarTestContent> createState() => _TabBarTestContentState();
-}
-
-class _TabBarTestContentState extends State<TabBarTestContent> with SingleTickerProviderStateMixin{
-
-  List<String> tabs = [
-    "推荐", "附近", "热门", "旅行热点", "露营初体验", "酒店民宿",
-    "美食探店", "亲子", "小众", "自驾", "网红", "逛展"
+  final List<String> items = [
+    "CategoryTabbar",
+    "BottomTabbar",
   ];
-  late TabController _tabController;
 
   @override
-  void initState() {
-    super.initState();
-    _tabController = TabController(length: tabs.length, vsync: this);
+  String titleForPage() {
+    return "TabBar Test";
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          color: Colors.amber,
-          height: 120.px,
-        ),
-        TabBar(
-          padding: EdgeInsets.only(top: 8.px,bottom: 8.px),
-          controller: _tabController,
-          isScrollable: true,
-          labelColor: Colors.orange,
-          labelStyle: TextStyle(fontSize: 36.rpx),
-          unselectedLabelColor: Colors.grey,
-          unselectedLabelStyle: TextStyle(fontSize: 28.rpx),
-          indicator: UnderlineTabIndicator(
-            borderSide: BorderSide(color: Colors.orange,width: 3.px),
-          ),
-          indicatorPadding: EdgeInsets.only(top: 45.px),
-          tabs: tabs.map<Tab>((e) {
-            return Tab(
-              text: e,
-              icon: Image(image:AssetImage(Assets.icSwitch),color: Colors.orange,),
-            );
-          }).toList(),
-        ),
-        Flexible(
-          child: TabBarView(
-            controller: _tabController,
-            children: tabs.map((String e) {
-              return Container(
-                color: Colors.grey,
-                child: Center(
-                  child: Text(e,style: TextStyle(fontSize: 32.px),),
-                ),
-              );
-            }).toList(),
-          ),
-        ),
-      ],
-    );
+  List itemsForListView() {
+    return items;
   }
 
   @override
-  void dispose() {
-    _tabController.dispose();
-    super.dispose();
-  }
-}
-
-class TabBarItem extends StatelessWidget {
-  const TabBarItem({Key? key, required this.items}) : super(key: key);
-
-  final List<Widget> items;
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: items,
-    );
+  void itemDidSelectedAtIndex(BuildContext context, int index) {
+    switch (index) {
+      case 0: {
+        Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+          return const CategoryTabBarPage();
+        }));
+        break;
+      }
+      case 1: {
+      Navigator.push(context, MaterialPageRoute(builder: (ctx) {
+        return const BottomTabBarPage();
+      }));
+        break;
+      }
+      default:{
+        Toast.showToast('功能开发中••••••');
+        break;
+      }
+    }
   }
 }

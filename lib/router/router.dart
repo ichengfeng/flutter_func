@@ -18,10 +18,11 @@ class CFRouter {
     LayoutTestPage.routerName: (ctx) => const LayoutTestPage(),
     TextTest.routeName: (ctx) => const TextTest(),
     ImageViewTest.routeName: (ctx) => const ImageViewTest(),
-    TabBarTestPage.routeName: (ctx) => const TabBarTestPage(),
+    TabBarTestPage.routeName: (ctx) => TabBarTestPage(),
     ScrollViewTest.routeName: (ctx) => ScrollViewTest(),
     WebViewTestPage.routerName: (ctx) => const WebViewTestPage(),
     TableTest.routeName: (ctx) => const TableTest(),
+    BlendTestPage.routeName: (ctx) => const BlendTestPage(),
 
     ProviderTestPage.routeName: (ctx) => ProviderTestPage(),
     StreamTestPage.routeName: (ctx) => const StreamTestPage(),
